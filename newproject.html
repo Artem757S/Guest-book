@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Message Submission Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="style.css" type="text/css">
+</head>
+<body>
+    <h1>Guest book</h1>
+    <form action="process-form.php" method="POST">  <!-- Атрибут action (HTML тега <form>) визначає адресу, куди відправляється форма (за замовчуванням дію встановлено на поточну сторінку).-->
+
+      <label for="name">Name:</label>  <!-- Атрибут for (HTML тега <label>) визначає до якого елементу форми відноситься поточна мітка (в тому ж документі). -->
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br> <!-- HTML теґ <textarea> визначає область в яку можна вводити декілька рядків тексту.На відміну від теґа <input> у текстовій області <textarea> дозволяється робити переноси рядків і вони будуть збережені при відправленні даних на сервер. Розмір текстової області може бути визначений за допомогою атрибутів cols та rows-->
+
+        <input type="submit" value="Ok">
+    </form>
+   
+</body>
+</html>
