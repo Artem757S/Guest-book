@@ -134,4 +134,3 @@ if (preg_match('/[^a-zA-Z0-9@?!"+=:$\-\. ]/', $userInput)) {
 }
 ?>
 
-https://github.com/Artem757S/Guest-book
